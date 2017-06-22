@@ -5,6 +5,7 @@
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+    max-width: 1024px;
 }
 
 /*  HEADER AND NAV  */
@@ -15,14 +16,13 @@ html {
 header {
     position: block;
     width: 100%;
-    height: 64px;
 }
 
 header .content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    height: 64px;
 }
 
 .logo-box {
@@ -59,4 +59,131 @@ nav li {
 nav li a {
     text-decoration: none;
     color: #9c9c9c;
+}
+
+/*  LEARN SOMETHING SECTION  */
+.start-container {
+    display: flex;
+    background-color: #e8e8e8;
+    padding: 32px 24px;
+    width: 100%;
+    max-width: 1024px;
+    align-items: center;
+}
+
+.start-container img {
+    display: inline-block;
+    width: 60%;
+}
+
+.learn-container {
+    display: inline-block;
+    padding-left: 40px;
+    padding-right: 90px;
+    color: #505050;
+}
+
+.learn-container h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 1.25em;
+    padding-bottom: 1.5rem;
+}
+
+.learn-container .challenge {
+    font-size: 1.25rem;
+    line-height: 1.5em;
+    padding-bottom: 1.5rem;
+}
+
+.learn-container .start {
+    background-color: #505050;
+    padding: 12px 0px;
+    text-align: center;
+}
+
+.start a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+/*  INFORMATION SECTION  */
+.information-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+p {
+    font-weight: 300;
+    color: #9c9c9c;
+    line-height: 1.2rem;
+}
+
+.practicing img {
+    display: flex;
+    width: 100%;
+    padding: 32px 24px;
+}
+
+.practicing h2 {
+    color: #505050;
+    font-size: 2rem;
+    font-weight: 900;
+    padding: 0px 0px 24px 24px;
+}
+
+.practicing p {
+    padding: 0px 0px 16px 16px;
+}
+
+.emanuel {
+    font-size: .75rem;
+    color: black;
+}
+
+.info-subs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 423px;
+    margin-left: 50px;
+    margin-right: -50px;
+}
+
+#guest {
+    background-color: #e8e8e8;
+}
+
+.info-box {
+    display: inline-flex;
+    width: 423px;
+    align-items: center;
+}
+
+.info-box img {
+    width: 35%;
+    padding: 16px;
+}
+
+.info-title {
+    padding: 16px 0px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #505050;
+}
+
+.info-text p {
+    font-size: 0.85rem;
+}
+
+.read-more a {
+    line-height: 3rem;
+    text-decoration: none;
+    color: #0066ff;
+}
+
+#guest-box {
+    background-color: gray;
 }
