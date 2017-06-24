@@ -35,6 +35,11 @@ header .content {
     text-decoration: none;
 }
 
+.logo-box a:hover {
+    color: #455e87;
+    font-weight: 700;
+}
+
 .colmar {
     font-weight: 700;
 }
@@ -61,6 +66,11 @@ nav li a {
     color: #9c9c9c;
 }
 
+nav li a:hover {
+    color: #455e87;
+    font-weight: 700;
+}
+
 /*  START INFORMATION SECTION  */
 .start-container {
     display: flex;
@@ -84,6 +94,7 @@ nav li a {
 }
 
 .learn-container h1 {
+    color: #455e87;
     font-size: 2.25rem;
     font-weight: 700;
     line-height: 1.25em;
@@ -97,15 +108,20 @@ nav li a {
 }
 
 .learn-container .start {
-    background-color: #505050;
+    background-color: #cf6766;
     padding: 12px 0px;
     text-align: center;
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
 }
 
-.start a {
-    color: white;
+.learn-container a {
     text-decoration: none;
-    font-weight: 400;
+}
+
+.learn-container .start:hover {
+    background-color: #c23f3d;
 }
 
 /*  INFORMATION SECTION  */
@@ -129,7 +145,7 @@ p {
 }
 
 .practicing h2 {
-    color: #505050;
+    color: #455e87;
     font-size: 2rem;
     font-weight: 900;
     padding: 0px 0px 24px 24px;
@@ -171,8 +187,8 @@ p {
 .info-title {
     padding: 16px 0px;
     font-size: 1.25rem;
-    font-weight: 500;
-    color: #505050;
+    font-weight: 700;
+    color: #455e87;
 }
 
 .info-text p {
@@ -182,11 +198,16 @@ p {
 .read-more a {
     line-height: 3rem;
     text-decoration: none;
-    color: #0066ff;
+    color: #cf6766;
+}
+
+.read-more a:hover {
+    color: #c23f3d;
+    font-weight: 900;
 }
 
 #guest-box {
-    background-color: gray;
+    background-color: #e8e8e8;
 }
 
 /*  START LEARNING SECTION  */
@@ -194,14 +215,14 @@ p {
     width: 100%;
     max-width: 1024px;
     padding: 24px;
-    background-color: #f0f0f0;
+    background-color: #e8e8e8;
     align-items: center;
     justify-content: center;
 }
 
 .title h2 {
     display: block;
-    color: #505050;
+    color: #455e87;
     font-size: 2rem;
     font-weight: 900;
     text-align: center;
@@ -233,4 +254,36 @@ p {
 
 .courses {
     padding-bottom: 1rem;
+}
+
+/*  THESIS EXHIBIT SECTION  */
+.thesis-container {
+    padding-top: 32px;
+}
+
+.thesis-content {
+    display: flex;
+    width: 100%;
+    align-items: top;
+    margin-bottom: 32px;
+    margin-top: -16px;
+}
+
+.thesis-vid {
+    display: block;
+    width: 100%;
+    padding: 16px 16px;
+}
+
+.video p {
+    padding: 16px 0px 16px 16px;
+}
+
+.thesis-subs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 423px;
+    margin-left: 50px;
+    margin-right: -50px;
 }
