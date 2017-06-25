@@ -454,8 +454,8 @@ footer li a:hover {
         font-size: 1.5rem;
     }
     
-    .courses-list a:visited {
-        font-weight: 400;
+    .courses-list a:active {
+        font-weight: 900;
         color: #c23f3d;
     }
     
