@@ -41,6 +41,7 @@ header .content {
 }
 
 .colmar {
+    color: #455e87;
     font-weight: 700;
 }
 
@@ -122,6 +123,7 @@ nav li a:hover {
 
 .learn-container .start:hover {
     background-color: #c23f3d;
+    transition-duration: 0.5s;
 }
 
 /*  INFORMATION SECTION  */
@@ -130,6 +132,10 @@ nav li a:hover {
     width: 100%;
     align-items: center;
     margin-bottom: 32px;
+}
+
+#info-mobile {
+    display: none;
 }
 
 p {
@@ -184,6 +190,10 @@ p {
     padding: 16px;
 }
 
+.info-box .img-mobile {
+    display: none;
+}
+
 .info-title {
     padding: 16px 0px;
     font-size: 1.25rem;
@@ -204,13 +214,10 @@ p {
 .read-more a:hover {
     color: #c23f3d;
     font-weight: 900;
+    transition-duration: 0.5s;
 }
 
-#guest-box {
-    background-color: #e8e8e8;
-}
-
-/*  START LEARNING SECTION  */
+/*  COURSES SECTION  */
 .course-container {
     width: 100%;
     max-width: 1024px;
@@ -243,6 +250,15 @@ p {
     margin: 0rem 1rem 2rem 1rem;
 }
 
+.course-box a {
+    text-decoration: none;
+}
+
+.course-box:hover {
+    background-color: #f6ddd5;
+    transition-duration: 0.5s;
+}
+
 .course-box img {
     width: 100%;
 }
@@ -252,11 +268,24 @@ p {
     font-size: 0.85rem;
 }
 
+.course-text a {
+    text-decoration: none;
+    color: #455e87;
+}
+
 .courses {
     padding-bottom: 1rem;
 }
 
+.courses-mobile {
+    display: none;
+}
+
 /*  THESIS EXHIBIT SECTION  */
+#thesis-mobile {
+    display: none;
+}
+
 .thesis-container {
     padding-top: 32px;
 }
@@ -267,6 +296,8 @@ p {
     align-items: top;
     margin-bottom: 32px;
     margin-top: -16px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #e8e8e8;
 }
 
 .thesis-vid {
@@ -287,3 +318,156 @@ p {
     margin-left: 50px;
     margin-right: -50px;
 }
+
+/*  FOOTER SECTION  */
+footer {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    height: 64px;
+    padding: 0rem 2rem;
+    font-size: 0.75rem;
+}
+
+.terms {
+    display: inline-block;
+}
+
+footer ul {
+    display: flex;
+    padding-right: 2rem;
+}
+
+footer li {
+  padding-left: 16px;
+}
+
+footer li a {
+    text-decoration: none;
+    color: #9c9c9c;
+}
+
+footer li a:hover {
+    color: #455e87;
+    font-weight: 700;
+}
+
+/*  ----------- MEDIA QUERIES -----------  */
+
+/*  NAV BAR MOBILE  */
+@media only screen and (max-width: 760px) {
+    .desktop {
+        display: none;
+    }
+    
+    .mobile {
+        display: block;
+        justify-content: space-between;
+    }
+    
+    header .mobile {
+        display: block;
+        width: 100%;
+    }
+
+  .mobile ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+  .mobile li {
+      padding: 0;
+    }
+}
+
+/*  LEARN SOMETHING SECTION MOBILE  */
+    
+@media only screen and (max-width: 760px) {
+    .start-container {
+        flex-flow: column;
+        padding: 0px 0px 24px 0px;
+    }
+    
+    .start-container img {
+        display: block;
+        width: 90%;
+        justify-content: center;
+}
+    
+    .information-container {
+        margin-top: 1rem;
+        flex-flow: column;
+        padding: 0px;
+  }
+      
+/*  START LEARNING SECTION MOBILE  */
+     #info-desktop, .practicing {
+        display: none; 
+    }
+
+    #info-mobile {
+        display: block;
+    }
+    
+    .info-subs {
+        display: block;
+        flex-flow: column;
+        margin: 0px;
+    }
+    
+    .info-box {
+        flex-flow: column;
+    }
+    
+    .info-box img {
+        width: 90%;
+    }
+
+/*  COURSES SECTION MOBILE  */
+   #courses-desktop {
+        display: none;
+    }
+    
+    #courses-mobile {
+        display: block;
+        border: 1px solid #e8e8e8;
+        padding-bottom: 2rem;
+    }
+    
+    #courses-mobile .title {
+        text-align: center;
+        padding: 1rem 0rem 0rem 0rem;
+    }
+    
+    .courses-list h3 {
+        padding: 16px 0px 16px 32px;
+        margin-bottom: 8px;
+        background-color: #e8e8e8;
+    }
+    
+    .courses-list a {
+        text-decoration: none;
+        color: #455e87;
+        font-weight: 400;
+        font-size: 1.5rem;
+    }
+    
+    .courses-list a:visited {
+        font-weight: 400;
+        color: #c23f3d;
+    }
+    
+/*  THESIS SECTION MOBILE  */
+    #thesis-desktop {
+        display: none;
+    }
+    
+    #thesis-mobile {
+        display: block;
+    }
+    
+}
+        
+    
