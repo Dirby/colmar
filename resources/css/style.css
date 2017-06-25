@@ -454,7 +454,7 @@ footer li a:hover {
         font-size: 1.5rem;
     }
     
-    .courses-list a:active {
+    .courses-list a:hover {
         font-weight: 900;
         color: #c23f3d;
     }
