@@ -6,6 +6,7 @@ html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
     max-width: 1024px;
+    margin: 0 auto;
 }
 
 /*  HEADER AND NAV  */
